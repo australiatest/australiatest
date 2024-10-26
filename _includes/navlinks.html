@@ -1,0 +1,23 @@
+<div>
+  <hr>
+</div>
+<div class="post_navi">
+    {%- if page.previous.url -%}
+      <a class="post_navi-item nav_prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
+        <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Früherer Post</div><div><span>{{ page.previous.title }}</span></div> <!-- % Previous Post -->
+      </a>
+    {%- else -%}
+      <a class="post_navi-item nav_prev" href="{{ 'archive' | absolute_url }}" title="Blog Archive">
+        <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Blog Archiv</div><div><span>Archiv mit allen Posts</span></div> <!-- % Blog Archive % Archive of all previous blog posts -->
+      </a>
+    {%- endif -%}
+    {%- if page.next.url -%}
+      <a class="post_navi-item nav_next" href="{{ page.next.url }}" title="{{ page.next.title }}">
+        <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Nächster Post</div><div><span>{{ page.next.title }}</span></div> <!-- % Next Post -->
+      </a>
+    {%- else -%}
+      <a class="post_navi-item nav_next" href="{{ 'archive' | absolute_url }}" title="Blog Archive">
+        <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Blog Archiv</div><div><span>Archiv mit allen Posts</span></div> <!-- % Blog Archive % Archive of all previous blog posts -->
+      </a>
+    {%- endif -%}
+</div>
