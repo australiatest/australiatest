@@ -1,7 +1,8 @@
 ---
 layout: post
-title: A More Complex Example
+title: A-More-Complex-Examplex
 support: [jquery, gallery]
+categories: gallery
 ---
 
 This example shows how to include several galleries into one page. Also notice that some captions have been set.
