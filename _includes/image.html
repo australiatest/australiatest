@@ -7,11 +7,19 @@
 {% assign img_min_w = 150 %}
 {% assign img_min_h = 150 %}
 
-<a href="https://wsrv.nl/?url={{ site.github.url }}/assets/images/{{ include.src }}&w={{ img_max_w }}&h={{ img_max_h }}&fit=inside" 
+<a href="https://wsrv.nl/?url={{ site.github.url }}/assets/images/{{ include.src }}&w=3840&h=3840&fit=inside" 
+data-lightbox="{{ include.data }}" 
+data-title="{{ include.title }}">
+    <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/images/{{ include.src }}&w=1920&h=1920&fit=inside" 
+    alt="{{ include.title }}" 
+    max-width="100%"/>
+</a>
+
+<!-- <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/images/{{ include.src }}&w={{ img_max_w }}&h={{ img_max_h }}&fit=inside" 
 data-lightbox="{{ include.data }}" 
 data-title="{{ include.title }}">
     <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/images/{{ include.src }}&w={{ img_std_w }}&h={{ img_std_w }}&fit=inside" 
     alt="{{ include.title }}" 
     max-width="100%"/>
-</a>
+</a> -->
 <!-- former href="{{ site.github.url }}/assets/images/{{ include.src }}" -->
