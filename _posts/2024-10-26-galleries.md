@@ -1,7 +1,7 @@
 ---
-layout: default
-title: Photography
-permalink: /photography/
+layout: base
+title: Gallery overview
+# permalink: /photography/
 ---
 
 ## {{ page.title }}
