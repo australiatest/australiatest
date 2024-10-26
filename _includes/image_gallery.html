@@ -1,0 +1,22 @@
+<!-- {% assign img_max_w = 3840 %}
+{% assign img_max_h = 3840 %}
+{% assign img_std_w = 1920 %}
+{% assign img_std_h = 1920 %}
+{% assign img_prev_w = 600 %}
+{% assign img_prev_h = 600 %}
+{% assign img_min_w = 150 %}
+{% assign img_min_h = 150 %}
+
+<div class="image-wrapper"></div>
+    <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.src }}&w={{ img_max_w }}&h={{ img_max_h }}&fit=inside"  
+    data-title="{{ include.title }}"
+    class="image"
+    {% if picture.title %}
+        data-sub-html="<div class='lg-toolbar caption'><h4>{{ include.title | escape }}</h4>
+        {% if include.caption %}<p>{{ include.caption | escape }}</p>{% endif %}</div>"
+    {% endif %}>
+        <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.src }}&w={{ img_std_w }}&h={{ img_std_w }}&fit=inside" 
+        alt="{{ include.title }}" 
+        max-width="100%"/>
+    </a>
+</div> -->
