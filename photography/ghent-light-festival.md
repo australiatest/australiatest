@@ -1,5 +1,5 @@
 ---
-layout: gallery
+layout: post
 title: A More Complex Example
 support: [jquery, gallery]
 ---
