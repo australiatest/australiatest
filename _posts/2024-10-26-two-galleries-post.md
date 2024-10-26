@@ -1,7 +1,7 @@
 ---
-layout: gallery-post
-# title: gallery-title-in-topinfoblock
+layout: post
 categories: info
+support: [jquery, gallery]
 # tags:
 ---
 

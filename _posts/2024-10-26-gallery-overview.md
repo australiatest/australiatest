@@ -1,7 +1,8 @@
 ---
-layout: base
+layout: post
 title: Gallery overview
 permalink: /photography/
+support: [jquery, gallery]
 ---
 
 <h2> {{ page.title }} </h2>
