@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A More Complex Examplex
+title: A More Complex Example
 support: [jquery, gallery]
 categories: gallery
 ---

@@ -1,0 +1,17 @@
+{% assign img_max_w = 3840 %} <!-- 4k resolution -->
+{% assign img_max_h = 3840 %} <!-- 4k resolution -->
+{% assign img_std_w = 1920 %}
+{% assign img_std_h = 1920 %}
+{% assign img_prev_w = 600 %}
+{% assign img_prev_h = 600 %}
+{% assign img_min_w = 150 %}
+{% assign img_min_h = 150 %}
+
+<a href="https://wsrv.nl/?url={{ site.github.url }}/assets/images/{{ include.src }}&w={{ img_max_w }}&h={{ img_max_h }}&fit=inside" 
+data-lightbox="{{ include.data }}" 
+data-title="{{ include.title }}">
+    <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/images/{{ include.src }}&w={{ img_std_w }}&h={{ img_std_w }}&fit=inside" 
+    alt="{{ include.title }}" 
+    max-width="100%"/>
+</a>
+<!-- former href="{{ site.github.url }}/assets/images/{{ include.src }}" -->
