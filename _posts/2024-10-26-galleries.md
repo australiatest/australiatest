@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Gallery overview
-# permalink: /photography/
+permalink: /photography/
 ---
 
 <h2> {{ page.title }} </h2>
