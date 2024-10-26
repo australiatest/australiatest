@@ -1,6 +1,6 @@
 -
  title: A Very Basic Example Gallery
- pagetitle: A-Very-Basic-Example
+ pagename: san-francisco
  preview:
   filename: VS-2012-6088
   original: VS-2012-6088-6000x4000.jpg
@@ -11,7 +11,7 @@
   thumbnail: VS-2012-6088-thumbnail.jpg
 -
  title: A More Complicated Example Gallery
- pagetitle: A-More-Complex-Examplex
+ pagename: ghent-light-festival
  picture_path: ghent-light-festival/part1
  preview:
   filename: Lichtfestival-0058
