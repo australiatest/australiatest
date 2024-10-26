@@ -4,7 +4,7 @@ title: Gallery overview
 # permalink: /photography/
 ---
 
-## {{ page.title }}
+<h2> {{ page.title }} </h2>
 
 This page illustrates how to include links to multiple galleries in one row. It is the overview page to navigate to different galleries.
 
