@@ -2,6 +2,7 @@
 layout: post
 # title: gallery-title-in-topinfoblock
 categories: info
+support: [jquery, gallery]
 # tags:
 ---
 
