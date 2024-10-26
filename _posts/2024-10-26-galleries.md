@@ -1,12 +1,12 @@
 ---
-layout: default
-title: Photography
+layout: base
+title: Gallery overview
 permalink: /photography/
 ---
 
-<h1>{{ page.title }}</h1>
+<h2> {{ page.title }} </h2>
 
-<p>Below are two example galleries. The first gallery illustrates basic usage. The second gallery illustrate how to include several image galleries into one entry to create more complex structures and tell better stories.</p>
+This page illustrates how to include links to multiple galleries in one row. It is the overview page to navigate to different galleries.
 
 {% assign count = 0 %}
 {% assign align = "left" %}
