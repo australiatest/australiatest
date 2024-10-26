@@ -86,7 +86,7 @@ titles_from_headings:
 
 defaults:
   - scope:
-      path: "photography" # changed while testing gallery. before, was ""
+      path: "" # changed while testing gallery. before, was ""
       type: posts
     values:
       tags: Allgemein # Other
