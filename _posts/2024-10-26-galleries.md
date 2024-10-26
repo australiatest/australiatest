@@ -6,7 +6,7 @@ title: Gallery overview
 
 ## {{ page.title }}
 
-This page illustrates how to include multiple galleries in one page. In particular they shall be in one row.
+This page illustrates how to include links to multiple galleries in one row. It is the overview page to navigate to different galleries.
 
 {% assign count = 0 %}
 {% assign align = "left" %}
