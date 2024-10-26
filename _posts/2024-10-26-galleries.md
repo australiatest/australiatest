@@ -4,9 +4,9 @@ title: Photography
 permalink: /photography/
 ---
 
-<h1>{{ page.title }}</h1>
+## {{ page.title }}
 
-<p>Below are two example galleries. The first gallery illustrates basic usage. The second gallery illustrate how to include several image galleries into one entry to create more complex structures and tell better stories.</p>
+This page illustrates how to include multiple galleries in one page. In particular they shall be in one row.
 
 {% assign count = 0 %}
 {% assign align = "left" %}
