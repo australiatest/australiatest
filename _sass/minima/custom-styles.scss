@@ -98,6 +98,11 @@
     box-sizing: border-box; /* Ensures padding is included in the total width/height */
     transition: transform 0.2s; /* Smooth transitions for hover effects */
   }
+  @media screen and (min-width: $on-medium) {
+    .gallery-item {
+      width: 48%; /* 2 columns on smaller screens */
+    }
+  }
 
   /* For wider items, if you want to implement width variations */
   .gallery-item--width2 {
