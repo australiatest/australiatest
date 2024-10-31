@@ -78,6 +78,8 @@
   margin-top: 0.5em;
 }
 
-.gallery-sizer {
-  width: 33.33%; /* Adjust as needed based on your desired layout */
-}
+/* fluid 5 columns */
+.grid-sizer,
+.grid-item { width: 20%; }
+/* 2 columns */
+.grid-item--width2 { width: 40%; }
