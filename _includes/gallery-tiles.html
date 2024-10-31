@@ -3,8 +3,11 @@
   {% for picture in include.gallery.pictures %}
   <div class="image-wrapper">
     <a href="{{ site.url }}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}"
-    data-responsive="{% for size in picture.sizes %} {{ site.url}}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ size }} {{ size | split: '-' | last | split: '.' | first | split: 'x' | first | strip }}{% unless forloop.last %},{% endunless %}{% endfor %}" class="image"
-    {% if picture.title %} data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"{% endif %}>
+    data-responsive="{% for size in picture.sizes %} {{ site.url}}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ size }} {{ size | split: '-' | last | split: '.' | first | split: 'x' | first | strip }}{% unless forloop.last %},{% endunless %}{% endfor %}" 
+    class="image"
+    {% if picture.title %} 
+    data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"
+    {% endif %} >
       <img alt="{{ picture.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}" />
     </a>
   </div>
@@ -14,7 +17,7 @@
 <script>
 $(document).ready(function() {
   var $gallery{% if include.id_number %}{{ include.id_number }}{% endif %} = $("#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}").lightGallery({
-    thumbnail: false,
+    thumbnail: true,
     selector: '.image'
   });
 });
