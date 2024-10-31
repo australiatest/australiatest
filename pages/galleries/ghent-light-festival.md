@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A More Complex Examplex
-support: [gallery]
+support: "gallery"
 categories: gallery
 ---
 

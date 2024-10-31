@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Very Basic Example
-support: [gallery]
+support: "gallery"
 categories: gallery
 ---
 
