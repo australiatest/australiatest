@@ -31,17 +31,18 @@
 
       autoplay: true,               // Enable autoplay for slideshow
       pause: 3000,                  // Pause duration for slideshow (3 seconds)
-      mode: 'fade',                 // 'fade', 'slide', 'lg-slide'
+      mode: 'lg-slide',                 // 'fade', 'slide', 'lg-slide'
       loop: false,
       progressBar: true,
 
       plugins: [lgZoom, lgFullscreen, lgAutoplay, lgThumbnail],
       subHtmlSelectorRelative: true, // Use relative selector for captions
-      // hideBarsDelay: 4000,
+      hideBarsDelay: 4000,
       hideControlOnEnd: true,
-      subHtml: function() {
-        return $(this).data('sub-html'); // Ensure captions are displayed
-      }
+      appendSubHtmlTo: ".lg-item",
+      // subHtml: function() {
+      //   return $(this).data('sub-html'); // Ensure captions are displayed
+      // }
     });
 
     // Initialize Isotope
