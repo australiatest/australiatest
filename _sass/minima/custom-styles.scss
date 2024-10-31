@@ -98,7 +98,7 @@
     box-sizing: border-box; /* Ensures padding is included in the total width/height */
     transition: transform 0.2s; /* Smooth transitions for hover effects */
 
-    @media screen and (min-width: $on-small) {
+    @media screen and (min-width: $on-palm) {
       width: 50%; /* 2 columns on smaller screens */
     }
   }
