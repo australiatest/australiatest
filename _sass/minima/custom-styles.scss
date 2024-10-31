@@ -81,11 +81,11 @@
 }
 
 
-.image-gallery, .gallery-item {
+.image-gallery {
   display: block;
 
   /* gallery-grid 5 columns */
-  .gallery-sizer { width: 33%; }
+  .gallery-sizer, .gallery-item { width: 33%; }
   /* 2 columns */
   .gallery-item--width2 { width: 48%; }
 
