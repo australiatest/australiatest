@@ -1,29 +1,27 @@
 <head>
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
-  
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- include google-analytics.html -%}
+  {%- endif -%}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- SEO and Feed Meta -->
-  {% seo %}
+  {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-  {% feed_meta %}
+  {%- feed_meta -%}
 
-  <!-- Start gallery support -->
+  <!-- start gallery support -->
   {% if page.support contains 'gallery' %}
-    <!-- LightGallery CSS and JS -->
-    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+  <!-- LightGallery CSS and JS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
 
-    <!-- Isotope and imagesLoaded JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
-  {% endif %}
-  <!-- End gallery support -->
+  <!-- Isotope and imagesLoaded JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+  <!-- end gallery support -->
+
 </head>

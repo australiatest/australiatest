@@ -19,10 +19,12 @@
   $(document).ready(function() {
     // Initialize LightGallery for the specific gallery
     lightGallery(document.getElementById('image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}'), {
-      thumbnail: true,
-      zoom: true,
-      selector: 'a',
-      plugins: [lgThumbnail, lgZoom],
+      thumbnail: false,         // Disable thumbnails
+      zoom: true,               // Enables zoom feature
+      fullScreen: true,         // Enables full screen mode
+      autoplay: true,           // Enable autoplay for slideshow
+      pause: 3000,              // Pause duration for slideshow (3 seconds)
+      plugins: [lgZoom, lgAutoplay], // Include the necessary plugins without thumbnail
       subHtmlSelectorRelative: true
     });
 
