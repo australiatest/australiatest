@@ -3,15 +3,13 @@
   <div id="gallery-sizer" class="grid-sizer"></div>
   
   {% for picture in include.gallery.pictures %}
-    <div class="grid-item">
-      <div class="image-wrapper">
+    <div class="grid-item image-wrapper">
         <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=2400&h=2400&fit=inside"
           data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
           <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}&w=1200&h=1200&fit=inside"
                 alt="{{ picture.title }}"
                 style="max-width: 100%;" />
         </a>
-      </div>
     </div>
   {% endfor %}
 </div>
