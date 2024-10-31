@@ -75,12 +75,13 @@
 
 .lg-sub-html p {
   font-size: 1em;
-  color: #888;  /* Adjust as needed */
+  color: #aaa;  /* Adjust as needed */
   margin-top: 0.5em;
+  font-weight: bold;
 }
 
 
-.image-gallery {
+.image-gallery, .gallery-item {
   display: block;
 
   /* gallery-grid 5 columns */
