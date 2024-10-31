@@ -39,21 +39,21 @@
       subHtmlSelectorRelative: true, // Use relative selector for captions
       hideBarsDelay: 4000,
       hideControlOnEnd: true,
-      appendSubHtmlTo: ".lg-item",
+      appendSubHtmlTo: ".lg-sub-html", // ".lg-item",
 
       closeOnTap: false,
       hideScrollbar: true,
     });
 
     // Manually move the captions to the toolbar after LightGallery initializes
-  $(document).on('onAfterSlide.lg', function(event, prevIndex, index) {
-    // Get the current caption
-    const caption = $('.lg-sub-html').html();
+  // $(document).on('onAfterSlide.lg', function(event, prevIndex, index) {
+  //   // Get the current caption
+  //   const caption = $('.lg-sub-html').html();
     
-    // Insert a custom div after
-  $('.lg-counter').after('<div class="custom-caption">${caption}</div>');
+  //   // Insert a custom div after
+  // $('.lg-counter').after('<div class="custom-caption">${caption}</div>');
 
-  });
+  // });
 
     // Initialize Isotope
     var $grid = $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').isotope({
