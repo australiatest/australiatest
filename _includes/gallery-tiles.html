@@ -1,9 +1,8 @@
 <!-- Gallery Container -->
-<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
-  <div class="grid-sizer"></div>
-  
+<div class="gallery-grid-sizer"></div>
+<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery">  
   {% for picture in include.gallery.pictures %}
-    <div class="grid-item image-wrapper">
+    <div class="gallery-grid-item image-wrapper">
         <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=1200&h=1200&fit=inside"
           data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
           <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=600&h=600&fit=inside"
@@ -30,11 +29,11 @@
 
     // Initialize Isotope
     var $grid = $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').isotope({
-      itemSelector: '.grid-item',
+      itemSelector: '.gallery-grid-item',
       layoutMode: 'masonry',
       percentPosition: true,
       masonry: {
-        columnWidth: '.grid-sizer'
+        columnWidth: '.gallery-grid-sizer'
       }
     });
 

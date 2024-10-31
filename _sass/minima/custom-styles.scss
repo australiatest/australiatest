@@ -66,6 +66,7 @@
   opacity: 0.3;
 }
 
+
 /* Style LightGallery captions */
 .lg-sub-html h4 {
   font-size: 1.2em;
@@ -78,14 +79,15 @@
   margin-top: 0.5em;
 }
 
-/* fluid 5 columns */
-.grid-sizer,
-.grid-item { width: 33%; }
+
+/* gallery-grid 5 columns */
+.gallery-grid-sizer,
+.gallery-grid-item { width: 33%; }
 /* 2 columns */
-.grid-item--width2 { width: 48%; }
+.gallery-grid-item--width2 { width: 48%; }
 
 
-.image-gallery {
+.gallery {
   display: block;
 
   .image-wrapper {
