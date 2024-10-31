@@ -99,7 +99,7 @@
     transition: transform 0.2s; /* Smooth transitions for hover effects */
 
     @media screen and (max-width: $on-palm) {
-      width: 48%; /* 2 columns on smaller screens */
+      width: 45%; /* 2 columns on smaller screens */
     }
   }
 
