@@ -92,21 +92,20 @@
 
   /* Default width for gallery items */
   .gallery-item {
-    width: 33%; /* Change to a percentage that fits your layout */
+    width: 33%; /* Change to a percentsmallat fits your layout */
     float: left; /* Floating allows the layout to work */
     padding: 3px; /* Adds padding around each image wrapper */
     box-sizing: border-box; /* Ensures padding is included in the total width/height */
     transition: transform 0.2s; /* Smooth transitions for hover effects */
-  }
-  @media screen and (min-width: $on-medium) {
-    .gallery-item {
-      width: 48%; /* 2 columns on smaller screens */
+
+    @media screen and (min-width: $on-small) {
+      width: 50%; /* 2 columns on smaller screens */
     }
   }
 
   /* For wider items, if you want to implement width variations */
   .gallery-item--width2 {
-    width: 48%; /* Adjust as necessary */
+    width: 50%; /* Adjust as necessary */
   }
 
   img {
