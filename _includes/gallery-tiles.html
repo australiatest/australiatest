@@ -39,14 +39,20 @@
       subHtmlSelectorRelative: true, // Use relative selector for captions
       hideBarsDelay: 4000,
       hideControlOnEnd: true,
-      appendSubHtmlTo: ".lg-components",
+      appendSubHtmlTo: ".lg-item",
 
       closeOnTap: false,
       hideScrollbar: true,
-      // subHtml: function() {
-      //   return $(this).data('sub-html'); // Ensure captions are displayed
-      // }
     });
+
+    // Manually move the captions to the toolbar after LightGallery initializes
+  $(document).on('onAfterSlide.lg', function(event, prevIndex, index) {
+    // Get the current caption
+    const caption = $('.lg-sub-html').html();
+    
+    // Append or replace it in the toolbar
+    $('.lg-toolbar').html(caption);
+  });
 
     // Initialize Isotope
     var $grid = $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').isotope({
