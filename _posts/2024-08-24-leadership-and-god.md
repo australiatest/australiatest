@@ -30,7 +30,7 @@ Every difficult situation requires you to decide anew: Should I use _my_ power a
 ## Pillars of Leadership: Skills and Values
 We can think of leadership qualities in terms of skills and values. A leader can have a high amount or a low amount of skills. And a leader can have a high standard regarding values or a low standard.
 
-{% include lightbox.html src="2024q3/2024-08-24/Skills-vs-Values.PNG" data="group" title="Skills and Values" %}
+{% include image_wrapper.html src="2024q3/2024-08-24/Skills-vs-Values.PNG" data="group" title="Skills and Values" %}
 
 A) Low-Low leaders drag down their people because they are ineffective. B) High-skill-low-value leaders tend to manipulate their people. C) Low-skill-high-value leaders have good motives but cannot help their people. D) High-high leaders live up to their responsibility through moral principles coupled with the ability to implement them.
 Where would you like to see yourself? Hopefully in quadrant D): High skills and high values.
@@ -58,7 +58,7 @@ Thus, the Bible school and program that I attend fit perfectly to A) invest in m
 Together with eight other students we live together on a property which includes a _main house_, a small _conference hall_, several sheds (one with a snooker table), and cabins for accommodation. Also, part of the staff and volunteers live on site.
 Let me introduce you to how our weeks look like.
 
-{% include lightbox.html src="2024q3/2024-08-24/ScheduleWeek7.PNG" data="group" title="Schedule Week 7" %}
+{% include image_wrapper.html src="2024q3/2024-08-24/ScheduleWeek7.PNG" data="group" title="Schedule Week 7" %}
 
 We have lectures about the Bible, lectures about leadership, and practical tasks. Further, we need to write weekly assignments, do research, participate in a weekly book study ([Spiritual leadership by J. Oswald Sanders](https://www.perlego.com/book/3900793/spiritual-leadership-principles-of-excellence-for-every-believer-pdf)), and give several presentations.
 
@@ -73,10 +73,10 @@ The Bible school already ends in two weeks :/. After two and a half weeks in New
 <table>
   <tr>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-24/P_20240807_174121.jpg" data="group" title="Sonnenuntergang" %}
+      {% include image_wrapper.html src="2024q3/2024-08-24/P_20240807_174121.jpg" data="group" title="Sonnenuntergang" %}
     </td>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-24/PXL_20240808_203706655.MP.jpg" data="group" title="Joggen" %}
+      {% include image_wrapper.html src="2024q3/2024-08-24/PXL_20240808_203706655.MP.jpg" data="group" title="Joggen" %}
     </td>
   </tr>
   <tr>
@@ -89,10 +89,10 @@ The Bible school already ends in two weeks :/. After two and a half weeks in New
   </tr>
   <tr>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-24/P_20240811_122409.jpg" data="group" title="Snookertisch" %}
+      {% include image_wrapper.html src="2024q3/2024-08-24/P_20240811_122409.jpg" data="group" title="Snookertisch" %}
     </td>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-24/P_20240812_100709.jpg" data="group" title="Fahrradtour" %}
+      {% include image_wrapper.html src="2024q3/2024-08-24/P_20240812_100709.jpg" data="group" title="Fahrradtour" %}
     </td>
   </tr>
   <tr>
@@ -105,10 +105,10 @@ The Bible school already ends in two weeks :/. After two and a half weeks in New
   </tr>
   <tr>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-24/P_20240823_063834.jpg" data="group" title="Noch ein Sonnenaufgang mit Nebel" %}
+      {% include image_wrapper.html src="2024q3/2024-08-24/P_20240823_063834.jpg" data="group" title="Noch ein Sonnenaufgang mit Nebel" %}
     </td>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-24/P_20240824_120134.jpg" data="group" title="Strandtag mit Surfen" %}
+      {% include image_wrapper.html src="2024q3/2024-08-24/P_20240824_120134.jpg" data="group" title="Strandtag mit Surfen" %}
     </td>
   </tr>
   <tr>
@@ -149,7 +149,7 @@ Jede schwierige Situation verlangt von neuem eine Entscheidung: Soll ich _meine_
 ## Die zwei Standbeine von Leiterschaft: Fähigkeiten und Werte
 Führungsqualität beruht auf der Qualität in zwei Bereichen: Fähigkeiten und Werte. Eine Führungspersönlichkeit kann ein hohes Maß oder ein geringes Maß an Fähigkeiten haben. Und eine Führungskraft kann einen hohen Standard in Bezug auf Werte oder einen niedrigen Standard haben.
 
-{% include lightbox.html src="2024q3/2024-08-24/Skills-vs-Values.PNG" data="group" title="Fähigkeiten (Skills) und Werte (Values)" %}
+{% include image_wrapper.html src="2024q3/2024-08-24/Skills-vs-Values.PNG" data="group" title="Fähigkeiten (Skills) und Werte (Values)" %}
 
 A) Niedrig-niedrig-Führungskräfte ziehen ihre Mitarbeiter nach unten, weil sie ineffektiv sind. B) Führungskräfte mit hohen Fähigkeiten und niedrigen Werten neigen dazu, ihre Mitarbeiter zu manipulieren. C) Führungskräfte mit hohen Wertestandards, aber geringen Fähigkeiten haben gute Motive, können ihren Leuten aber nicht wirklich helfen. D) Führungskräfte mit hoher Ausprägung in beiden Bereichen werden ihrer Verantwortung durch moralische Grundsätze und die Fähigkeit, diese umzusetzen, gerecht.
 In welchem Quadrant wärst Du gerne? Hoffentlich bei D): Ausgeprägte Fähigkeiten und hohe Werte.
@@ -176,7 +176,7 @@ Daher passen die Bibelschule und das Programm, das ich besuche, perfekt, um A) i
 ## Was mache ich in einer Bibelschule?
 Zusammen mit acht anderen Studenten leben wir auf einem Grundstück, zu dem ein Haupthaus, ein kleiner Konferenzsaal, mehrere Schuppen (einer davon mit einem Snookertisch) und Hütten für die Unterbringung gehören. Auch ein Teil der Mitarbeiter und Freiwilligen wohnt auf dem Gelände. Gerne gebe ich einen kleinen Einblick, wie unsere Wochen hier aussehen.
 
-{% include lightbox.html src="2024q3/2024-08-24/ScheduleWeek7.PNG" data="group" title="Wochenplan 7" %}
+{% include image_wrapper.html src="2024q3/2024-08-24/ScheduleWeek7.PNG" data="group" title="Wochenplan 7" %}
 
 Wir haben Unterrichtseinheiten über die Bibel, Vorträge über Leiterschaft und praktische Aufgaben. Außerdem müssen wir wöchentliche Abgaben ausarbeiten, recherchieren, ein Buch über Leiterschaft lesen und darüber diskutieren ([Geistliche Leiterschaft von J. Oswald Sanders](https://www.perlego.com/book/3900793/spiritual-leadership-principles-of-excellence-for-every-believer-pdf)) und verschiedene Vorträge halten.
 

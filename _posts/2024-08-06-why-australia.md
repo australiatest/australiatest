@@ -44,10 +44,10 @@ Today’s world needs wise leaders. And one "goal of a good leader should be to 
 <table>
   <tr>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-06/P_20240717_142523.jpg" data="group" title="Strand" %}
+      {% include image_wrapper.html src="2024q3/2024-08-06/P_20240717_142523.jpg" data="group" title="Strand" %}
     </td>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-06/P_20240718_070946.jpg" data="group" title="Sonnenaufgang mit Nebel" %}
+      {% include image_wrapper.html src="2024q3/2024-08-06/P_20240718_070946.jpg" data="group" title="Sonnenaufgang mit Nebel" %}
     </td>
   </tr>
   <tr>
@@ -60,10 +60,10 @@ Today’s world needs wise leaders. And one "goal of a good leader should be to 
   </tr>
   <tr>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-06/P_20240719_163457.jpg" data="group" title="Mit Jacke - Winter in den Southern Highlands" %}
+      {% include image_wrapper.html src="2024q3/2024-08-06/P_20240719_163457.jpg" data="group" title="Mit Jacke - Winter in den Southern Highlands" %}
     </td>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-06/P_20240722_065145_bearbeitet.jpg" data="group" title="Bunter Sonnenaufgang" %}
+      {% include image_wrapper.html src="2024q3/2024-08-06/P_20240722_065145_bearbeitet.jpg" data="group" title="Bunter Sonnenaufgang" %}
     </td>
   </tr>
   <tr>
@@ -76,10 +76,10 @@ Today’s world needs wise leaders. And one "goal of a good leader should be to 
   </tr>
   <tr>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-06/P_20240803_125432.jpg" data="group" title="Wanderung zwischen Felsen ..." %}
+      {% include image_wrapper.html src="2024q3/2024-08-06/P_20240803_125432.jpg" data="group" title="Wanderung zwischen Felsen ..." %}
     </td>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-06/P_20240803_140109.jpg" data="group" title="... am Fluss ..." %}
+      {% include image_wrapper.html src="2024q3/2024-08-06/P_20240803_140109.jpg" data="group" title="... am Fluss ..." %}
     </td>
   </tr>
   <tr>
@@ -92,10 +92,10 @@ Today’s world needs wise leaders. And one "goal of a good leader should be to 
   </tr>
   <tr>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-06/P_20240803_150101.jpg" data="group" title="... bis zum Wasserfall" %}
+      {% include image_wrapper.html src="2024q3/2024-08-06/P_20240803_150101.jpg" data="group" title="... bis zum Wasserfall" %}
     </td>
     <td>
-      {% include lightbox.html src="2024q3/2024-08-06/P1000093.JPG" data="group" title="Blick über das Tal" %}
+      {% include image_wrapper.html src="2024q3/2024-08-06/P1000093.JPG" data="group" title="Blick über das Tal" %}
     </td>
   </tr>
   <tr>

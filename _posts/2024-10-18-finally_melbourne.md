@@ -76,10 +76,10 @@ With all that, I hope to hear from _you_: what is God doing in your life, and wh
 <table>
   <tr>
     <td>
-      {% include lightbox.html src="2024q4/2024-10-18/2024 AU 04 SYD-MELB (2).jpg" data="group" title="Lieferwagen" %}
+      {% include image_wrapper.html src="2024q4/2024-10-18/2024 AU 04 SYD-MELB (2).jpg" data="group" title="Lieferwagen" %}
     </td>
     <td>
-      {% include lightbox.html src="2024q4/2024-10-18/2024 AU 04 SYD-MELB (13).jpg" data="group" title="Unterwegs" %}
+      {% include image_wrapper.html src="2024q4/2024-10-18/2024 AU 04 SYD-MELB (13).jpg" data="group" title="Unterwegs" %}
     </td>
   </tr>
   <tr>
@@ -92,10 +92,10 @@ With all that, I hope to hear from _you_: what is God doing in your life, and wh
   </tr>
   <tr>
     <td>
-      {% include lightbox.html src="2024q4/2024-10-18/2024 AU 05 Teenstreet VIC (2).jpg" data="group" title="Teenstreet" %}
+      {% include image_wrapper.html src="2024q4/2024-10-18/2024 AU 05 Teenstreet VIC (2).jpg" data="group" title="Teenstreet" %}
     </td>
     <td>
-      {% include lightbox.html src="2024q4/2024-10-18/2024 AU 06 MELB (5).jpg" data="group" title="Einzug" %}
+      {% include image_wrapper.html src="2024q4/2024-10-18/2024 AU 06 MELB (5).jpg" data="group" title="Einzug" %}
     </td>
   </tr>
   <tr>
@@ -108,10 +108,10 @@ With all that, I hope to hear from _you_: what is God doing in your life, and wh
   </tr>
   <tr>
     <td>
-      {% include lightbox.html src="2024q4/2024-10-18/2024 AU 06 MELB (11).jpg" data="group" title="Kochen mit Gasherd" %}
+      {% include image_wrapper.html src="2024q4/2024-10-18/2024 AU 06 MELB (11).jpg" data="group" title="Kochen mit Gasherd" %}
     </td>
     <td>
-      {% include lightbox.html src="2024q4/2024-10-18/2024 AU 06 MELB (14).jpg" data="group" title="Fahrrad" %}
+      {% include image_wrapper.html src="2024q4/2024-10-18/2024 AU 06 MELB (14).jpg" data="group" title="Fahrrad" %}
     </td>
   </tr>
   <tr>
@@ -124,10 +124,10 @@ With all that, I hope to hear from _you_: what is God doing in your life, and wh
   </tr>
   <tr>
     <td>
-      {% include lightbox.html src="2024q4/2024-10-18/2024 AU 06 MELB (16).jpg" data="group" title="Sonnenuntergang" %}
+      {% include image_wrapper.html src="2024q4/2024-10-18/2024 AU 06 MELB (16).jpg" data="group" title="Sonnenuntergang" %}
     </td>
     <td>
-      {% include lightbox.html src="2024q4/2024-10-18/2024 AU 06 MELB (56)_edited01.jpg" data="group" title="planetshakers" %}
+      {% include image_wrapper.html src="2024q4/2024-10-18/2024 AU 06 MELB (56)_edited01.jpg" data="group" title="planetshakers" %}
     </td>
   </tr>
   <tr>
