@@ -93,11 +93,11 @@
     padding: 3px;        /* Adds padding around each image wrapper */
     box-sizing: border-box; /* Ensures padding is included in the total width/height */
 
-    img {
-      width: 100%;       /* Sets image to take full width of its container */
-      height: auto;      /* Maintains aspect ratio */
-      display: block;    /* Ensures no extra space below the image */
-    }
+    // img {
+    //   width: 100%;       /* Sets image to take full width of its container */
+    //   height: auto;      /* Maintains aspect ratio */
+    //   display: block;    /* Ensures no extra space below the image */
+    // }
   }
 
   &:after {
