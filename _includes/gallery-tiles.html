@@ -14,7 +14,7 @@
 <script>
 $(document).ready(function() {
   var $gallery{% if include.id_number %}{{ include.id_number }}{% endif %} = $("#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}").lightGallery({
-    thumbnail: false,
+    thumbnail: true,
     selector: '.image'
   });
 });
