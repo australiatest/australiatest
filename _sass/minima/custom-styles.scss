@@ -86,23 +86,40 @@
 
 
 .image-gallery {
+  margin: 0 auto;
+  padding: 0;
   display: block;
-
-  .image-wrapper {
-    float: left;          /* Allows the image to be floated to the left */
-    padding: 3px;        /* Adds padding around each image wrapper */
-    box-sizing: border-box; /* Ensures padding is included in the total width/height */
-
-    // img {
-    //   width: 100%;       /* Sets image to take full width of its container */
-    //   height: auto;      /* Maintains aspect ratio */
-    //   display: block;    /* Ensures no extra space below the image */
-    // }
-  }
-
-  &:after {
-    content: '';         /* Creates a clearfix for floated elements */
-    display: block;
-    clear: both;        /* Clears the float */
-  }
 }
+
+.image-wrapper {
+  padding: 5px; /* Adjust as needed */
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+// .image-gallery {
+//   display: block;
+
+//   .image-wrapper {
+//     float: left;          /* Allows the image to be floated to the left */
+//     padding: 3px;        /* Adds padding around each image wrapper */
+//     box-sizing: border-box; /* Ensures padding is included in the total width/height */
+
+//     // img {
+//     //   width: 100%;       /* Sets image to take full width of its container */
+//     //   height: auto;      /* Maintains aspect ratio */
+//     //   display: block;    /* Ensures no extra space below the image */
+//     // }
+//   }
+
+//   &:after {
+//     content: '';         /* Creates a clearfix for floated elements */
+//     display: block;
+//     clear: both;        /* Clears the float */
+//   }
+// }

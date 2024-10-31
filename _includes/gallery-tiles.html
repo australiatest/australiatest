@@ -7,8 +7,7 @@
         <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=1200&h=1200&fit=inside"
           data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
           <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=600&h=600&fit=inside"
-                alt="{{ picture.title }}"
-                style="max-width: 100%;" />
+                alt="{{ picture.title }}" />
         </a>
     </div>
   {% endfor %}
@@ -19,14 +18,14 @@
   $(document).ready(function() {
     // Initialize LightGallery for the specific gallery
     lightGallery(document.getElementById('image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}'), {
-      thumbnail: false,          // Enable thumbnails
+      thumbnail: true,          // Enable thumbnails
       zoom: true,               // Enables zoom feature
-      fullScreen: true,         // Enables full screen mode
+      // fullScreen: true,         // Enables full screen mode
       autoplay: true,           // Enable autoplay for slideshow
       pause: 3000,              // Pause duration for slideshow (3 seconds)
       plugins: [lgZoom, lgThumbnail, lgAutoplay], // Include necessary plugins
-      subHtmlSelectorRelative: true,
-      showThumbByDefault: false, // Disable showing thumbnails by default
+      subHtmlSelectorRelative: false,
+      showThumbByDefault: true, // Disable showing thumbnails by default
     });
 
     // Initialize Isotope
