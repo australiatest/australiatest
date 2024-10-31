@@ -1,6 +1,6 @@
 <!-- Gallery Container -->
-<div class="gallery-grid-sizer"></div>
-<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery">  
+<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery">
+  <div class="gallery-grid-sizer"></div>
   {% for picture in include.gallery.pictures %}
     <div class="gallery-grid-item image-wrapper">
         <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=1200&h=1200&fit=inside"
@@ -18,12 +18,12 @@
     // Initialize LightGallery for the specific gallery
     lightGallery(document.getElementById('image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}'), {
       thumbnail: true,          // Enable thumbnails
-      zoom: true,               // Enables zoom feature
+      // zoom: true,               // Enables zoom feature
       // fullScreen: true,         // Enables full screen mode
-      autoplay: true,           // Enable autoplay for slideshow
+      // autoplay: true,           // Enable autoplay for slideshow
       pause: 3000,              // Pause duration for slideshow (3 seconds)
       plugins: [lgZoom, lgThumbnail, lgAutoplay], // Include necessary plugins
-      subHtmlSelectorRelative: false,
+      subHtmlSelectorRelative: true,
       showThumbByDefault: true, // Disable showing thumbnails by default
     });
 
