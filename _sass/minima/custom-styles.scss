@@ -132,3 +132,14 @@
     clear: both; /* Clears the float */
   }
 }
+
+.lg-toolbar .custom-caption {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically if toolbar height allows */
+  width: 100%;
+  // color: #fff;              /* Adjust font color */
+  // font-size: 1em;
+  // font-weight: bold;
+  text-align: center;
+}

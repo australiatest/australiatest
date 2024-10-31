@@ -50,8 +50,9 @@
     // Get the current caption
     const caption = $('.lg-sub-html').html();
     
-    // Append or replace it in the toolbar
-    $('.lg-toolbar').html(caption);
+    // Insert a custom div after
+  $('.lg-counter').after('<div class="custom-caption">${caption}</div>');
+
   });
 
     // Initialize Isotope
