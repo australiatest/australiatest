@@ -1,36 +1,38 @@
 <!-- Gallery Container -->
 <div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
   <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
+  
   {% for picture in include.gallery.pictures %}
     <div class="image-wrapper">
-      <a href="{{ site.url }}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}"
-      data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
-      <img alt="{{ picture.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}" />
-    </a>
+      <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=2400&h=2400&fit=inside"
+         data-lightbox="{{ picture.title }}"
+         data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
+         <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}&w=1200&h=1200&fit=inside"
+              alt="{{ picture.title }}"
+              style="max-width: 100%;" />
+      </a>
     </div>
   {% endfor %}
 </div>
 
-<!-- Initialize LightGallery and Isotope -->
 <script>
-  // Initialize LightGallery for all items in #image-gallery
-  lightGallery(document.getElementsByClassName('image-gallery'), {
-    thumbnail: true,
-    zoom: true,
-    selector: 'a',
-    plugins: [lgThumbnail, lgZoom],
-    subHtmlSelectorRelative: true
-  });
-
-  // Wait for the document to load
   $(document).ready(function() {
+    // Initialize LightGallery for the specific gallery
+    lightGallery(document.getElementById('image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}'), {
+      thumbnail: true,
+      zoom: true,
+      selector: 'a',
+      plugins: [lgThumbnail, lgZoom],
+      subHtmlSelectorRelative: true
+    });
+
     // Initialize Isotope
-    var $grid = $('#image-gallery').isotope({
-      itemSelector: '.image-wrapper',  // Make sure this matches the class for each image container
-      layoutMode: 'masonry',            // or another layout like 'fitRows'
+    var $grid = $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').isotope({
+      itemSelector: '.image-wrapper',
+      layoutMode: 'masonry',
       percentPosition: true,
       masonry: {
-        columnWidth: '.gallery-sizer'   // Ensure this matches the size reference element in your HTML
+        columnWidth: '.gallery-sizer'
       }
     });
 
