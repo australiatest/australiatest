@@ -1,6 +1,6 @@
 <!-- Gallery Container -->
-<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
-  <div class="grid-sizer"></div>
+<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}">
+  <div class="grid-sizer image-gallery"></div>
   
   {% for picture in include.gallery.pictures %}
     <div class="grid-item image-wrapper">
@@ -17,7 +17,8 @@
 <script>
   $(document).ready(function() {
     // Initialize LightGallery for the specific gallery
-    lightGallery(document.getElementById('image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}'), {
+    lightGallery(document.getElementsByClassName("image-gallery"), {
+    // 'image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}'), {
       thumbnail: true,          // Enable thumbnails
       zoom: true,               // Enables zoom feature
       // fullScreen: true,         // Enables full screen mode
