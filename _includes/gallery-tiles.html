@@ -39,6 +39,9 @@
       subHtmlSelectorRelative: true, // Use relative selector for captions
       hideBarsDelay: 4000,
       hideControlOnEnd: true,
+      subHtml: function() {
+        return $(this).data('sub-html'); // Ensure captions are displayed
+      }
     });
 
     // Initialize Isotope
