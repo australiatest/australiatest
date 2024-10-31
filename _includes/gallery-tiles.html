@@ -20,7 +20,7 @@
   $(document).ready(function() {
     // Initialize LightGallery for the specific gallery
     lightGallery(document.getElementById('image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}'), {
-      thumbnail: false,         // Disable thumbnails
+      thumbnail: true,         // Disable thumbnails
       zoom: true,               // Enables zoom feature
       fullScreen: true,         // Enables full screen mode
       autoplay: true,           // Enable autoplay for slideshow
