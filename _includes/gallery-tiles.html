@@ -1,12 +1,10 @@
 <div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
   <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
   {% for picture in include.gallery.pictures %}
-  <div class="image-wrapper">
+  <div id="animated-thumbnails-gallery">
     <a href="{{ site.url }}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}"
-    data-responsive="{% for size in picture.sizes %} {{ site.url}}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ size }} {{ size | split: '-' | last | split: '.' | first | split: 'x' | first | strip }}{% unless forloop.last %},{% endunless %}{% endfor %}" 
-    class="image"
     {% if picture.title %} 
-    data-sub-html="<div class='lg-toolbar caption'><h2>{{ picture.title | escape }}</h2>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"
+    data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"
     {% endif %} >
       <img alt="{{ picture.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}" />
     </a>
@@ -15,12 +13,16 @@
 </div>
 
 <script>
-$(document).ready(function() {
-  var $gallery{% if include.id_number %}{{ include.id_number }}{% endif %} = $("#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}").lightGallery({
+lightGallery(document.getElementById('animated-thumbnails-gallery'), {
     thumbnail: true,
-    selector: '.image'
-  });
 });
+
+// $(document).ready(function() {
+//   var $gallery{% if include.id_number %}{{ include.id_number }}{% endif %} = $("#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}").lightGallery({
+//     thumbnail: true,
+//     selector: '.image'
+//   });
+// });
 
 // init isotope
 var $grid{% if include.id_number %}{{ include.id_number }}{% endif %} = $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').isotope({
