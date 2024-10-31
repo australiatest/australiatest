@@ -17,25 +17,28 @@
   $(document).ready(function() {
     // Initialize LightGallery for the specific gallery
     lightGallery(document.getElementById('image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}'), {
+      selector: 'a',                // Selector for the gallery items
+
       thumbnail: true,              // Enable thumbnails
+      toggleThumb: true,
+      allowMediaOverlap: true,      // Allow media to overlap
+      showThumbByDefault: true,    // Disable showing thumbnails by default
+      download: false,
+      share: false,
       zoom: true,                   // Enables zoom feature
+      showZoomInOutIcons: true,
       fullScreen: true,             // Enables full screen mode
+
       autoplay: true,               // Enable autoplay for slideshow
       pause: 3000,                  // Pause duration for slideshow (3 seconds)
       mode: 'fade',                 // 'fade', 'slide', 'lg-slide'
       loop: false,
-      // progressBar: true,
-      allowMediaOverlap: true,      // Allow media to overlap
-      selector: 'a',                // Selector for the gallery items
-      showThumbByDefault: false,    // Disable showing thumbnails by default
-      plugins: [lgZoom, lgFullscreen, lgAutoplay, lgThumbnail, lgShare],
-      download: false,
+      progressBar: true,
+
+      plugins: [lgZoom, lgFullscreen, lgAutoplay, lgThumbnail],
       subHtmlSelectorRelative: true, // Use relative selector for captions
       hideBarsDelay: 4000,
       hideControlOnEnd: true,
-      // subHtml: function() {
-      //   return $(this).data('sub-html'); // Ensure captions are displayed
-      // }
     });
 
     // Initialize Isotope
