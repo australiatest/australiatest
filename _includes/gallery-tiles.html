@@ -1,13 +1,15 @@
 <!-- Gallery Container -->
-<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery">
-  <div class="gallery-grid-sizer invisible"></div>
+<div class="gallery">
+  <div class="gallery-grid-sizer"></div>
   {% for picture in include.gallery.pictures %}
-    <div class="gallery-grid-item image-wrapper">
+    <div class="gallery-grid-item" id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" >
+      <div class = "image-wrapper">
         <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=1200&h=1200&fit=inside"
           data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
           <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=600&h=600&fit=inside"
                 alt="{{ picture.title }}" />
         </a>
+      </div>
     </div>
   {% endfor %}
 </div>
