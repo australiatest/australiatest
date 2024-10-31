@@ -9,3 +9,5 @@ gem "jekyll-sitemap"
 gem "csv"
 gem "base64"
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+# gem 'isotope-rails', '~> 2.2', '>= 2.2.2'
