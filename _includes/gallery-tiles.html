@@ -20,7 +20,7 @@
       selector: 'a',                // Selector for the gallery items
 
       thumbnail: true,              // Enable thumbnails
-      // toggleThumb: true,
+      toggleThumb: true,
       allowMediaOverlap: true,      // Allow media to overlap
       showThumbByDefault: false,    // Disable showing thumbnails by default
       download: false,
@@ -37,7 +37,7 @@
 
       plugins: [lgZoom, lgFullscreen, lgAutoplay, lgThumbnail],
       subHtmlSelectorRelative: true, // Use relative selector for captions
-      hideBarsDelay: 4000,
+      // hideBarsDelay: 4000,
       hideControlOnEnd: true,
       subHtml: function() {
         return $(this).data('sub-html'); // Ensure captions are displayed

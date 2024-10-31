@@ -80,6 +80,14 @@
   font-weight: bold;
 }
 
+.lg-sub-html {
+  display: block;         /* Ensure the captions are block elements */
+  opacity: 1;            /* Make sure they are fully visible */
+  transition: opacity 0.5s; /* Optional: smooth transition */
+  position: relative;     /* Positioning for absolute children if needed */
+  z-index: 1000;         /* Make sure captions are above other elements */
+}
+
 
 .image-gallery {
   display: block;
