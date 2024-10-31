@@ -1,8 +1,46 @@
+<!-- Gallery Container -->
 <div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
   <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
   {% for picture in include.gallery.pictures %}
-  <div id="animated-thumbnails-gallery">
+    <div class="image-wrapper">
+      <a href="{{ site.url }}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}"
+         data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>">
+        <img alt="{{ picture.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}" />
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Initialize LightGallery and Isotope -->
+<script>
+  // Initialize LightGallery for all items in #image-gallery
+  lightGallery(document.getElementById('image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}'), {
+      thumbnail: true,
+      selector: 'a'
+  });
+
+  // Initialize Isotope
+  var $grid{% if include.id_number %}{{ include.id_number }}{% endif %} = $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').isotope({
+    percentPosition: true,
+    masonry: {
+      columnWidth: '#gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}'
+    },
+    itemSelector: '.image-wrapper'
+  });
+
+  // Layout Isotope after each image loads
+  $grid{% if include.id_number %}{{ include.id_number }}{% endif %}.imagesLoaded().progress( function() {
+    $grid{% if include.id_number %}{{ include.id_number }}{% endif %}.isotope('layout');
+  });
+</script>
+
+<!-- <div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
+  <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
+  {% for picture in include.gallery.pictures %}
+  <div class="image-wrapper">
     <a href="{{ site.url }}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}"
+    data-responsive="{% for size in picture.sizes %} {{ site.url}}{{ site.baseurl }}/assets/galleries/{{ include.gallery.picture_path }}/{{ size }} {{ size | split: '-' | last | split: '.' | first | split: 'x' | first | strip }}{% unless forloop.last %},{% endunless %}{% endfor %}" 
+    class="image"
     {% if picture.title %} 
     data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"
     {% endif %} >
@@ -10,19 +48,15 @@
     </a>
   </div>
   {% endfor %}
-</div>
-
+</div> -->
+<!-- 
 <script>
-lightGallery(document.getElementById('animated-thumbnails-gallery'), {
+$(document).ready(function() {
+  var $gallery{% if include.id_number %}{{ include.id_number }}{% endif %} = $("#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}").lightGallery({
     thumbnail: true,
+    selector: '.image'
+  });
 });
-
-// $(document).ready(function() {
-//   var $gallery{% if include.id_number %}{{ include.id_number }}{% endif %} = $("#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}").lightGallery({
-//     thumbnail: true,
-//     selector: '.image'
-//   });
-// });
 
 // init isotope
 var $grid{% if include.id_number %}{{ include.id_number }}{% endif %} = $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').isotope({
@@ -37,4 +71,4 @@ $grid{% if include.id_number %}{{ include.id_number }}{% endif %}.imagesLoaded()
   $grid{% if include.id_number %}{{ include.id_number }}{% endif %}.masonry();
 });
 
-</script>
+</script> -->
