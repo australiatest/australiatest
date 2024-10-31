@@ -83,28 +83,37 @@
 
 .image-gallery {
   display: block;
+  position: relative;  /* Allows positioning of child elements */
 
-  /* gallery-grid 5 columns */
-  .gallery-sizer, .gallery-item { width: 33%; }
-  /* 2 columns */
-  .gallery-item--width2 { width: 48%; }
+  /* Set up a sizer element for Isotope's masonry layout */
+  .gallery-sizer {
+    width: 33%; /* Adjust as needed for the column width */
+  }
 
+  /* Default width for gallery items */
   .gallery-item {
-    float: left;          /* Allows the image to be floated to the left */
-    padding: 3px;        /* Adds padding around each image wrapper */
+    width: 33%; /* Change to a percentage that fits your layout */
+    float: left; /* Floating allows the layout to work */
+    padding: 3px; /* Adds padding around each image wrapper */
     box-sizing: border-box; /* Ensures padding is included in the total width/height */
-
-    img {
-      width: 100%;       /* Sets image to take full width of its container */
-      height: auto;      /* Maintains aspect ratio */
-      display: block;    /* Ensures no extra space below the image */
-    }
+    transition: transform 0.2s; /* Smooth transitions for hover effects */
   }
 
+  /* For wider items, if you want to implement width variations */
+  .gallery-item--width2 {
+    width: 48%; /* Adjust as necessary */
+  }
+
+  img {
+    width: 100%; /* Sets image to take full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures no extra space below the image */
+  }
+
+  /* Clearfix to clear floated elements */
   &:after {
-    content: '';         /* Creates a clearfix for floated elements */
-    display: block;
-    clear: both;        /* Clears the float */
+    content: ''; /* Creates a clearfix for floated elements */
+    display: table; /* More modern clearfix */
+    clear: both; /* Clears the float */
   }
-
 }
