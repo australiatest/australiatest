@@ -1,6 +1,6 @@
 <!-- Gallery Container -->
-<div class="gallery" id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" >
-  <div class="gallery-grid-sizer"></div>
+<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
+  <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
   {% for picture in include.gallery.pictures %}
     <div class="gallery-grid-item">
       <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=1200&h=1200&fit=inside"
@@ -14,26 +14,34 @@
 
 <!-- Initialize LightGallery and Isotope -->
 <script>
+  // $(document).ready(function() {
+  // var $gallery{% if include.id_number %}{{ include.id_number }}{% endif %} = $("#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}").lightGallery({
+  //   thumbnail: false,
+  //   selector: 'a'
+  //   });
+  // });
+
   $(document).ready(function() {
     // Initialize LightGallery for the specific gallery
     lightGallery(document.getElementById('image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}'), {
       thumbnail: true,          // Enable thumbnails
-      // zoom: true,               // Enables zoom feature
-      // fullScreen: true,         // Enables full screen mode
-      // autoplay: true,           // Enable autoplay for slideshow
+      zoom: true,               // Enables zoom feature
+      fullScreen: true,         // Enables full screen mode
+      autoplay: true,           // Enable autoplay for slideshow
       pause: 3000,              // Pause duration for slideshow (3 seconds)
       plugins: [lgZoom, lgThumbnail, lgAutoplay], // Include necessary plugins
       subHtmlSelectorRelative: true,
       showThumbByDefault: true, // Disable showing thumbnails by default
+      selector: 'a',
     });
 
     // Initialize Isotope
     var $grid = $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').isotope({
-      itemSelector: '.gallery-grid-item',
+      itemSelector: '.gallery-item',
       layoutMode: 'masonry',
       percentPosition: true,
       masonry: {
-        columnWidth: '.gallery-grid-sizer'
+        columnWidth: '.gallery-sizer'
       }
     });
 
