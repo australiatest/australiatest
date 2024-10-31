@@ -5,22 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- {%- seo -%} -->
+  {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-  <!-- {%- feed_meta -%} -->
-
-  <!-- start highlight.js support -->
-  <!-- <link rel="stylesheet" href="/js/highlightjs/styles/github.css">
-  <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
-
-  <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
-
-  <script type="text/javascript" src="/js/highlightjs/languages/plaintext.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/powershell.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/tsql.min.js"></script>
-
-  <script type="text/javascript"> hljs.highlightAll(); </script> -->
-  <!-- end highlight.js support -->
+  {%- feed_meta -%}
 
   <!-- start gallery support -->
   {% if page.support contains 'jquery' %}
@@ -31,13 +18,13 @@
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> <!-- Dominik for gallery-->
 
   <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script> -->
 
   <!-- Actual includes needed for the gallery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery-all.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.0/isotope.pkgd.min.js"></script>
-  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/gallery.css" />
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.0/isotope.pkgd.min.js"></script> -->
+  <!-- <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/gallery.css" /> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>
   {% endif %}
