@@ -6,13 +6,13 @@ support: [jquery, gallery]
 ---
 
 ## Urlaubsbilder September 2024  \|  Vacation pictures September 2024
-Zuerst kommt das englische Original, dann die [deutsche Version](##deutsch). Darunter folgen die Bilder.
+Zuerst kommt das englische Original, dann die [deutsche Version](#deutsch). Darunter folgen die Bilder.
 
-**In Kürze:**  Viel Spaß mit den Fotos aus den [Blue Mountains](##blue-mountains), [Sydney](##sydney) und [Neuseeland](##neuseeland).
+**In Kürze:**  Viel Spaß mit den Fotos aus den [Blue Mountains](#blue-mountains), [Sydney](#sydney) und [Neuseeland](#neuseeland).
 
 ---
 
-**Sum-up:** Enjoy photos from my trips to the [Blue Mountains](##blue-mountains), [Sydney](##sydney) and [New Zealand](##neuseeland).
+**Sum-up:** Enjoy photos from my trips to the [Blue Mountains](#blue-mountains), [Sydney](#sydney) and [New Zealand](#neuseeland).
 
 ---
 
@@ -54,7 +54,7 @@ Our itinerary is here [marked on a map](https://waypoint.jakelazaroff.com/97417f
 <table>
   <tr>
     <td>
-      {% include image_wrapper.html src="2024q4/2024-11-01/2024AU-03-NZ-Reiseroute_Map.PNG" data="group" title="Reiseroute (Map)" %}
+      {% include image_wrapper.html src="2024q4/2024-11-01/2024-AU-03-NZ-Reiseroute_Map.PNG" data="group" title="Reiseroute (Map)" %}
     </td>
     <td>
       {% include image_wrapper.html src="2024q4/2024-11-01/2024-AU-03-NZ-Reiseroute_Stops.PNG" data="group" title="Reiseroute (Stops)" %}
