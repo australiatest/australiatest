@@ -4,7 +4,7 @@
   {% for picture in include.gallery.pictures %}
     <div class="gallery-item">
       {% include image_wrapper_.html
-        src="{{ gallery.picture_path }}/{{ picture.original }}" 
+        src="galleries/{{ gallery.picture_path }}/{{ picture.original }}" 
         title="{{ picture.title }}"
         caption="{{ picture.caption }}"
         width=""
