@@ -8,13 +8,10 @@
 {% assign original_link = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: image_path | append: "&w=" | append: width | append: "&h=" | append: height | append: "&fit=inside" %}
 {% assign image_src = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: image_path | append: "&w=" | append: width_thumb | append: "&h=" | append: height_thumb | append: "&fit=inside" %}
 
-<a href="{{ original_link }}" data-sub-html="{{ include.caption | escape }}">
+<a href="{{ original_link }}" data-sub-html="<h4>{{ include.title | escape }}</h4><p>{{ include.caption | escape }}</p>">
   <img 
     src="{{ image_src }}"
     alt="{{ include.title }}" 
     title="{{ include.title }}"
-    class="gallery-image" 
-    width="{{ width_thumb }}" 
-    height="{{ height_thumb }}"
   />
 </a>
