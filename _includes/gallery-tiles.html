@@ -4,15 +4,8 @@
   
   {% for picture in include.gallery.pictures %}
     <div class="gallery-item">
-      {% include image_wrapper_.html 
-        src="galleries/{{ include.gallery.picture_path }}/{{ picture.original }}"
-        title="{{ picture.title }}"
-        caption="{{ picture.caption }}"
-        width="2400"            {# Original width #}
-        height="2400"           {# Original height #}
-        width_thumb="1200"      {# Thumbnail width #}
-        height_thumb="1200"     {# Thumbnail height #}
-      %}
+      {% assign src_ = "galleries/" | append: include.gallery.picture_path | append: "/" | append: picture.original }
+      {% include image_wrapper_.html src=src_ title="{{ picture.title }}" caption="{{ picture.caption }}" width="2400" height="2400" width_thumb="1200" height_thumb="1200" %}
     </div>
   {% endfor %}
 </div>
