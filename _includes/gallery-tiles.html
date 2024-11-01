@@ -3,8 +3,9 @@
   <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
   {% for picture in include.gallery.pictures %}
     <div class="gallery-item">
+      {% assign src = "galleries/{{ include.gallery.picture_path }}/{{ picture.original }}" %}
       {% include image_wrapper_.html
-        src="galleries/{{ include.gallery.picture_path }}/{{ picture.original }}" 
+        src= {{ src }}
         title="{{ picture.title }}"
         caption="{{ picture.caption }}"
         width=""
