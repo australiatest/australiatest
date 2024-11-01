@@ -3,15 +3,20 @@
   <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
   
   {% for picture in include.gallery.pictures %}
-    <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=2400&h=2400&fit=inside"
+  <div class="gallery-item">
+    {% assign width = include.width | default: "2400" %}  {# Default original width #}
+    {% assign height = include.height | default: "2400" %} {# Default original height #}
+    {% assign width_thumb = include.width_thumb | default: "1200" %}  {# Default thumbnail width #}
+    {% assign height_thumb = include.height_thumb | default: "1200" %} {# Default thumbnail height #}
+    {% assign src_ = "galleries/" | append: include.gallery.picture_path | append: "/" | append: picture.original }
+    {% assign original_link = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: src_ | append: "&w=" | append: width | append: "&h=" | append: height | append: "&fit=inside" %}
+    {% assign image_src = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: src_ | append: "&w=" | append: width_thumb | append: "&h=" | append: height_thumb | append: "&fit=inside" %}
+    <a href="{{ original_link }}"
       data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
-      <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=1200&h=1200&fit=inside"
+      <img src="{{ image_src }}"
         alt="{{ picture.title }}" />
     </a>
-    <!-- <div class="gallery-item">
-      {% assign src_ = "galleries/" | append: include.gallery.picture_path | append: "/" | append: picture.original }
-      {% include image_wrapper_.html src=src_ title="{{ picture.title }}" caption="{{ picture.caption }}" width="2400" height="2400" width_thumb="1200" height_thumb="1200" %}
-    </div> -->
+  </div>
   {% endfor %}
 </div>
 
