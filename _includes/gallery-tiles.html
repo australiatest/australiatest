@@ -3,18 +3,19 @@
   <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
   
   {% for picture in include.gallery.pictures %}
-    <div class="gallery-item">
+    <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=2400&h=2400&fit=inside"
+      data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
+      <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=1200&h=1200&fit=inside"
+        alt="{{ picture.title }}" />
+    </a>
+    <!-- <div class="gallery-item">
       {% assign src_ = "galleries/" | append: include.gallery.picture_path | append: "/" | append: picture.original }
       {% include image_wrapper_.html src=src_ title="{{ picture.title }}" caption="{{ picture.caption }}" width="2400" height="2400" width_thumb="1200" height_thumb="1200" %}
-    </div>
+    </div> -->
   {% endfor %}
 </div>
 
-<!-- <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=2400&h=2400&fit=inside"
-data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
-<img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=1200&h=1200&fit=inside"
-      alt="{{ picture.title }}" />
-</a> -->
+
 
 <!-- Initialize LightGallery and Isotope -->
 <script>
