@@ -7,10 +7,11 @@
         src="galleries/{{ include.gallery.picture_path }}/{{ picture.original }}"
         title="{{ picture.title }}"
         caption="{{ picture.caption }}"
-        width="1200"            {# Display image width #}
-        height="1200"           {# Display image height #}
-        original_width="2400"   {# Original image width #}
-        original_height="2400"  {# Original image height #}
+        {# Specify width and height for the original image #}
+        width="2400"            {# Original width #}
+        height="2400"           {# Original height #}
+        width_thumb="1200"      {# Thumbnail width #}
+        height_thumb="1200"     {# Thumbnail height #}
         data_sub_html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>"
       %}<!-- <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=2400&h=2400&fit=inside"
       data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">

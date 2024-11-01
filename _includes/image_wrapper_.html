@@ -1,10 +1,12 @@
 {% assign base_url = site.github.url %}
 {% assign image_path = include.src %}
-{% assign original_width = include.original_width %}
-{% assign original_height = include.original_height %}
+{% assign width = include.width | default: "2400" %}  {# Default original width #}
+{% assign height = include.height | default: "2400" %} {# Default original height #}
+{% assign width_thumb = include.width_thumb | default: "1200" %}  {# Default thumbnail width #}
+{% assign height_thumb = include.height_thumb | default: "1200" %} {# Default thumbnail height #}
 
-{% assign original_link = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: image_path | append: "&w=" | append: original_width | append: "&h=" | append: original_height | append: "&fit=inside" %}
-{% assign image_src = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: image_path | append: "&w=" | append: include.width | append: "&h=" | append: include.height | append: "&fit=inside" %}
+{% assign original_link = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: image_path | append: "&w=" | append: width | append: "&h=" | append: height | append: "&fit=inside" %}
+{% assign image_src = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: image_path | append: "&w=" | append: width_thumb | append: "&h=" | append: height_thumb | append: "&fit=inside" %}
 
 <a href="{{ original_link }}" data-sub-html="{{ include.data_sub_html }}">
   <img 
@@ -12,8 +14,8 @@
     alt="{{ include.title }}" 
     title="{{ include.title }}"
     class="gallery-image" 
-    width="{{ include.width }}" 
-    height="{{ include.height }}"
+    width="{{ width_thumb }}" 
+    height="{{ height_thumb }}"
   />
 </a>
 
