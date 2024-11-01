@@ -3,11 +3,20 @@
   <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
   {% for picture in include.gallery.pictures %}
     <div class="gallery-item">
-      <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=2400&h=2400&fit=inside"
+      {% include image_wrapper_.html
+        src="galleries/{{ include.gallery.picture_path }}/{{ picture.original }}" 
+        title="{{ picture.title }}"
+        caption="{{ picture.caption }}"
+        width=""
+        height=""
+        width_thumb=""
+        height_thumb=""
+      %}
+      <!-- <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=2400&h=2400&fit=inside"
       data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
       <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w=1200&h=1200&fit=inside"
             alt="{{ picture.title }}" />
-    </a>
+    </a> -->
     </div>
   {% endfor %}
 </div>
