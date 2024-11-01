@@ -1,13 +1,20 @@
-{% assign width = include.width | default: 2400 %}
-{% assign height = include.height | default: 2400 %}
-{% assign width_thumb = include.width_thumb | default: 1200 %}
-{% assign height_thumb = include.height_thumb | default: 1200 %}
+{% assign base_url = site.github.url %}
+{% assign image_path = include.src %}
+{% assign original_width = include.original_width %}
+{% assign original_height = include.original_height %}
 
-<a href="https://wsrv.nl/?url={{ site.github.url }}/assets/{{ include.src }}&w={{ width }}&h={{ height }}&fit=inside"
-data-sub-html="<h4>{{ include.title | escape }}</h4><p>{{ include.caption | escape }}</p>">
-<img src="https://wsrv.nl/?url={{ site.github.url }}/assets/{{ include.src }}&w={{ width_thumb }}&h={{ height_thumb }}&fit=inside"
-      alt="{{ include.title | escape }}"
-      max-width="100%" />
+{% assign original_link = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: image_path | append: "&w=" | append: original_width | append: "&h=" | append: original_height | append: "&fit=inside" %}
+{% assign image_src = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: image_path | append: "&w=" | append: include.width | append: "&h=" | append: include.height | append: "&fit=inside" %}
+
+<a href="{{ original_link }}" data-sub-html="{{ include.data_sub_html }}">
+  <img 
+    src="{{ image_src }}"
+    alt="{{ include.title }}" 
+    title="{{ include.title }}"
+    class="gallery-image" 
+    width="{{ include.width }}" 
+    height="{{ include.height }}"
+  />
 </a>
 
       <!-- {% include image_wrapper_.html
