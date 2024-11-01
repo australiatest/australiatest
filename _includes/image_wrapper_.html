@@ -1,11 +1,11 @@
-{% assign default_width = 2400 %}
-{% assign default_height = 2400 %}
-{% assign default_width_thumb = 1200 %}
-{% assign default_height_thumb = 1200 %}
+{% assign width = include.width | default: 2400 %}
+{% assign height = include.height | default: 2400 %}
+{% assign width_thumb = include.width_thumb | default: 1200 %}
+{% assign height_thumb = include.height_thumb | default: 1200 %}
 
-<a href="https://wsrv.nl/?url={{ site.github.url }}/assets/{{ include.src }}&w={{ include.width | default_width }}&h={{ include.height | default_height }}&fit=inside"
+<a href="https://wsrv.nl/?url={{ site.github.url }}/assets/{{ include.src }}&w={{ width }}&h={{ height }}&fit=inside"
 data-sub-html="<h4>{{ include.title | escape }}</h4><p>{{ include.caption | escape }}</p>">
-<img src="https://wsrv.nl/?url={{ site.github.url }}/assets/{{ include.src }}&w={{ include.width | default_width_thumb }}&h={{ include.height | default_height_thumb }}&fit=inside"
-      alt="{{ picture.title }}"
+<img src="https://wsrv.nl/?url={{ site.github.url }}/assets/{{ include.src }}&w={{ width_thumb }}&h={{ height_thumb }}&fit=inside"
+      alt="{{ inclue.title }}"
       max-width="100%" />
 </a>
