@@ -8,7 +8,7 @@
 {% assign original_link = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: image_path | append: "&w=" | append: width | append: "&h=" | append: height | append: "&fit=inside" %}
 {% assign image_src = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: image_path | append: "&w=" | append: width_thumb | append: "&h=" | append: height_thumb | append: "&fit=inside" %}
 
-<a href="{{ original_link }}" data-sub-html="{{ include.data_sub_html }}">
+<a href="{{ original_link }}" data-sub-html="{{ include.caption | escape }}">
   <img 
     src="{{ image_src }}"
     alt="{{ include.title }}" 
@@ -18,20 +18,3 @@
     height="{{ height_thumb }}"
   />
 </a>
-
-      <!-- {% include image_wrapper_.html
-        src="galleries/{{ include.gallery.picture_path }}/{{ picture.original }}" 
-        title="{{ picture.title }}"
-        caption="{{ picture.caption }}"
-        width=""
-        height=""
-        width_thumb=""
-        height_thumb=""
-      %} -->
-
-<!-- <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/{{ include.src }}&w={{ width }}&h={{ height }}&fit=inside"
-data-sub-html="<h4>{{ include.title | escape }}</h4><p>{{ include.caption | escape }}</p>">
-<img src="https://wsrv.nl/?url={{ site.github.url }}/assets/{{ include.src }}&w={{ width_thumb }}&h={{ height_thumb }}&fit=inside"
-      alt="{{ include.title }}"
-      max-width="100%" />
-</a> -->
