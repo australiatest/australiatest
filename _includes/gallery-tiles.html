@@ -1,27 +1,22 @@
-{% assign width = include.width | default: "2400" %}  {# Default original width #}
-{% assign height = include.height | default: "2400" %} {# Default original height #}
-{% assign width_thumb = include.width_thumb | default: "1200" %}  {# Default thumbnail width #}
-{% assign height_thumb = include.height_thumb | default: "1200" %} {# Default thumbnail height #}
+{% assign width = "2400" | default: "2400" %}  {# Default original width #}
+{% assign height = "2400" | default: "2400" %} {# Default original height #}
+{% assign width_thumb = "2400" | default: "1200" %}  {# Default thumbnail width #}
+{% assign height_thumb = "2400" | default: "1200" %} {# Default thumbnail height #}
 
 <!-- Gallery Container -->
 <div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
   <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
   
   {% for picture in include.gallery.pictures %}
-    {% assign src_ = "galleries/" | append: include.gallery.picture_path | append: "/" | append: picture.original }
-    {% assign original_link = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: src_ | append: "&w=" | append: width | append: "&h=" | append: height | append: "&fit=inside" %}
-    {% assign image_src = "https://wsrv.nl/?url=" | append: base_url | append: "/assets/" | append: src_ | append: "&w=" | append: width_thumb | append: "&h=" | append: height_thumb | append: "&fit=inside" %}
     <div class="gallery-item">
-      <a href="{{ original_link }}"
+      <a href="https://wsrv.nl/?url={{ base_url }}/assets/galleries/{{ include.gallery.picture_path }}&w={{ width }}&h={{ height }}&fit=inside"
         data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
-        <img src="{{ image_src }}"
+        <img src="https://wsrv.nl/?url={{ base_url }}/assets/galleries/{{ include.gallery.picture_path }}&w={{ width }}&h={{ height }}&fit=inside"
           alt="{{ picture.title }}" />
       </a>
     </div>
   {% endfor %}
 </div>
-
-
 
 <!-- Initialize LightGallery and Isotope -->
 <script>
