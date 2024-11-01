@@ -1,7 +1,7 @@
-{% assign width = "2400" | default: "2400" %}
-{% assign height = "2400" | default: "2400" %}
-{% assign width_thumb = "2400" | default: "1200" %}
-{% assign height_thumb = "2400" | default: "1200" %}
+{% assign width = 2400 | default: "2400" %}
+{% assign height = 2400 | default: "2400" %}
+{% assign width_thumb = 2400 | default: "1200" %}
+{% assign height_thumb = 2400 | default: "1200" %}
 
 <!-- Gallery Container -->
 <div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
@@ -9,9 +9,9 @@
   
   {% for picture in include.gallery.pictures %}
     <div class="gallery-item">
-      <a href="https://wsrv.nl/?url={{ base_url }}/assets/galleries/{{ include.gallery.picture_path }}&w={{ width }}&h={{ height }}&fit=inside"
+      <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}&w={{ width }}&h={{ height }}&fit=inside"
         data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
-        <img src="https://wsrv.nl/?url={{ base_url }}/assets/galleries/{{ include.gallery.picture_path }}&w={{ width }}&h={{ height }}&fit=inside"
+        <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}&w={{ width }}&h={{ height }}&fit=inside"
           alt="{{ picture.title }}" />
       </a>
     </div>
