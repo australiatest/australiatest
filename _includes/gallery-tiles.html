@@ -9,9 +9,9 @@
   
   {% for picture in include.gallery.pictures %}
     <div class="gallery-item">
-      <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}&w={{ width }}&h={{ height }}&fit=inside"
+      <a href="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w={{ width }}&h={{ height }}&fit=inside"
         data-sub-html="<h4>{{ picture.title | escape }}</h4><p>{{ picture.caption | escape }}</p>">
-        <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}&w={{ width }}&h={{ height }}&fit=inside"
+        <img src="https://wsrv.nl/?url={{ site.github.url }}/assets/galleries/{{ include.gallery.picture_path }}/{{ picture.original }}&w={{ width }}&h={{ height }}&fit=inside"
           alt="{{ picture.title }}" />
       </a>
     </div>
