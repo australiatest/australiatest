@@ -62,7 +62,7 @@ Our itinerary is here [marked on a map](https://waypoint.jakelazaroff.com/97417f
   </tr>
 </table>
 
-[To the image galleries](#gallerien)
+[To the picture galleries](#galerien)
 
 ---
 
@@ -119,7 +119,7 @@ Unsere Reiseroute ist hier [auf einer Karte eingezeichnet](https://waypoint.jake
 
 ---
 
-# Gallerien
+# Galerien
 
 ## Blue Mountains
 
