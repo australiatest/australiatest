@@ -1,3 +1,4 @@
+---
 picture_path: 2024-09_02_sydney
 preview:
   filename: 002_2024-AU-02-Sydney-(11)
@@ -5,12 +6,12 @@ preview:
 pictures:
 - filename: 001_2024-AU-02-Sydney-(1)
   original: 001_2024-AU-02-Sydney-(1).jpg
-  title: 
-  caption: 
+  title: "Willkommen in Sydney"
+  caption: "Welcome to Sydney"
 - filename: 002_2024-AU-02-Sydney-(11)
   original: 002_2024-AU-02-Sydney-(11).jpg
-  title: 
-  caption: 
+  title: "Das weltbekannte Opernhaus"
+  caption: "The world-famous opera house"
 - filename: 003_2024-AU-02-Sydney-(41)
   original: 003_2024-AU-02-Sydney-(41).jpg
   title: 
@@ -57,8 +58,8 @@ pictures:
   caption: 
 - filename: 014_2024-AU-02-Sydney-(115)
   original: 014_2024-AU-02-Sydney-(115).JPG
-  title: 
-  caption: 
+  title: "Bootstour zum Manly Beach: Blick aufs offene Meer"
+  caption: "Boat trip to Manly Beach: view of the open sea"
 - filename: 015_2024-AU-02-Sydney-(133)
   original: 015_2024-AU-02-Sydney-(133).JPG
   title: 
@@ -69,8 +70,8 @@ pictures:
   caption: 
 - filename: 017_2024-AU-02-Sydney-(124)
   original: 017_2024-AU-02-Sydney-(124).JPG
-  title: 
-  caption: 
+  title: "Die Harbour Bridge"
+  caption: "The Harbour Bridge"
 - filename: 018_2024-AU-02-Sydney-(138)
   original: 018_2024-AU-02-Sydney-(138).JPG
   title: 
@@ -81,8 +82,8 @@ pictures:
   caption: 
 - filename: 020_2024-AU-02-Sydney-(173)
   original: 020_2024-AU-02-Sydney-(173).jpg
-  title: 
-  caption: 
+  title: "Traumjob im Lego-Laden?!"
+  caption: "Dream job in a Lego store!"
 - filename: 021_2024-AU-02-Sydney-(176)
   original: 021_2024-AU-02-Sydney-(176).jpg
   title: 
